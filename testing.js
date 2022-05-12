@@ -20,25 +20,6 @@ class StrictEqualityExtension {
           }
         },
         {
-          opcode: 'ist zwischen',
-          blockType: Scratch.BlockType.BOOLEAN,
-          text: 'ist [THREE] zwischen [VOUR] und [FIVE] ?',
-          arguments: {
-            THREE: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: '50'
-            },
-            VOUR: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: '0'
-            },
-            FIVE: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: '100'
-            }
-          }
-        },
-        {
           opcode: 'hi',
           blockType: Scratch.BlockType.REPORTER,
           text: 'hallo?',
@@ -56,17 +37,6 @@ class StrictEqualityExtension {
     // Note strict equality: Inputs must match exactly: in type, case, etc.
     var kauderwelsch = 100;
     return 'what do you want?';
-  }
-   ist zwischen(args) {
-    // Note strict equality: Inputs must match exactly: in type, case, etc.
-    if (args.VOUR < args.FIVE)
-    {
-      return args.THREE > args.FOUR && args.THREE < args.FIVE
-    }
-    else
-    {
-      return args.THREE < args.FOUR && args.THREE > args.FIVE
-    }
   }
 }
 Scratch.extensions.register(new StrictEqualityExtension());
