@@ -21,7 +21,7 @@ class StrictEqualityExtension {
         },
         {
           opcode: 'hi',
-          blockType: Scratch.BlockType.BOOLEAN,
+          blockType: Scratch.BlockType.REPORTER,
           text: 'hallo?',
           arguments: {
            }
