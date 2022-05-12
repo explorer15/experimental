@@ -35,6 +35,7 @@ class StrictEqualityExtension {
   }
   hi(args) {
     // Note strict equality: Inputs must match exactly: in type, case, etc.
+    kauderwelsch = 100;
     return 'what do you want?';
   }
 }
