@@ -31,7 +31,7 @@ class StrictEqualityExtension {
   }
   strictlyEquals(args) {
     // Note strict equality: Inputs must match exactly: in type, case, etc.
-    return args.ONE === args.TWO;
+    return args.ONE == args.TWO;
   }
   hi(args) {
     // Note strict equality: Inputs must match exactly: in type, case, etc.
