@@ -19,6 +19,25 @@ class StrictEqualityExtension {
             }
           }
         },
+         {
+          opcode: 'innerhalb',
+          blockType: Scratch.BlockType.BOOLEAN,
+          text: '[THREE] [VOUR] [FIVE]',
+          arguments: {
+            THREE: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: '0'
+            },
+            VOUR: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: '50'
+            },
+            FIVE: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: '100'
+            }
+          }
+        },
         {
           opcode: 'hi',
           blockType: Scratch.BlockType.REPORTER,
@@ -37,6 +56,10 @@ class StrictEqualityExtension {
     // Note strict equality: Inputs must match exactly: in type, case, etc.
     var kauderwelsch = 100;
     return 'what do you want?';
+  }
+   innerhalb(args) {
+    // Note strict equality: Inputs must match exactly: in type, case, etc.
+    return args.THREE;
   }
 }
 Scratch.extensions.register(new StrictEqualityExtension());
