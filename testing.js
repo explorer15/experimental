@@ -7,7 +7,7 @@ class StrictEqualityExtension {
         {
           opcode: 'strictlyEquals',
           blockType: Scratch.BlockType.BOOLEAN,
-          text: '[ONE] strictly equals [TWO]',
+          text: '[ONE] ist genau wie [TWO]',
           arguments: {
             ONE: {
               type: Scratch.ArgumentType.STRING,
