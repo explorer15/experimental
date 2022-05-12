@@ -22,7 +22,7 @@ class StrictEqualityExtension {
          {
           opcode: 'innerhalb',
           blockType: Scratch.BlockType.BOOLEAN,
-          text: 'ist [THREE] zwischen [VOUR] und [FIVE]',
+          text: ' ist [THREE] zwischen [VOUR] und [FIVE] ',
           arguments: {
             THREE: {
               type: Scratch.ArgumentType.STRING,
