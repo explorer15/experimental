@@ -22,7 +22,7 @@ class StrictEqualityExtension {
          {
           opcode: 'innerhalb',
           blockType: Scratch.BlockType.BOOLEAN,
-          text: '[THREE] [VOUR] [FIVE]',
+          text: 'ist [THREE] zwischen [VOUR] und [FIVE]',
           arguments: {
             THREE: {
               type: Scratch.ArgumentType.STRING,
@@ -59,7 +59,7 @@ class StrictEqualityExtension {
   }
    innerhalb(args) {
     // Note strict equality: Inputs must match exactly: in type, case, etc.
-    return args.THREE;
+    return args.THREE > args.VOUR;
   }
 }
 Scratch.extensions.register(new StrictEqualityExtension());
