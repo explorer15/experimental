@@ -59,7 +59,14 @@ class StrictEqualityExtension {
   }
    innerhalb(args) {
     // Note strict equality: Inputs must match exactly: in type, case, etc.
-    return args.THREE > args.VOUR && args.THREE < args.FIVE;
+    if (args.VOUR < args.FIVE)
+    {
+     return args.THREE > args.VOUR && args.THREE < args.FIVE;
+    }
+     else
+    {
+     return args.THREE < args.VOUR && args.THREE > args.FIVE;
+    }
   }
 }
 Scratch.extensions.register(new StrictEqualityExtension());
