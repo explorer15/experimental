@@ -45,7 +45,7 @@ class StrictEqualityExtension {
           arguments: {}
         },
         {
-          opcode: "Version 2.0",
+          opcode: 'Version',
           blockType: Scratch.BlockType.REPORTER,
           text: 'Version',
           arguments: {}
@@ -59,7 +59,7 @@ class StrictEqualityExtension {
   }
   hi(args) {
     // Note strict equality: Inputs must match exactly: in type, case, etc.
-    this.stage.vars.meineVariable += 1;
+    Scratch.Variable.meineVariable = 1;
     return 'what do you want?';
   }
    innerhalb(args) {
@@ -74,7 +74,7 @@ class StrictEqualityExtension {
     }
   }
   Version(args) {
-    return 'Version 1.0';
+    return 'Version 3.0';
   }
 }
 Scratch.extensions.register(new StrictEqualityExtension());
