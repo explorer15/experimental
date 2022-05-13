@@ -42,8 +42,13 @@ class StrictEqualityExtension {
           opcode: 'hi',
           blockType: Scratch.BlockType.REPORTER,
           text: 'hallo?',
-          arguments: {
-           }
+          arguments: {}
+        },
+        {
+          opcode: 'Version',
+          blockType: Scratch.BlockType.BOOLEAN,
+          text: 'Version',
+          arguments: {}
         }
       ]
     };
@@ -54,7 +59,7 @@ class StrictEqualityExtension {
   }
   hi(args) {
     // Note strict equality: Inputs must match exactly: in type, case, etc.
-    var kauderwelsch = 100;
+    this.stage.vars.meineVariable += 1;
     return 'what do you want?';
   }
    innerhalb(args) {
@@ -67,6 +72,9 @@ class StrictEqualityExtension {
     {
      return args.THREE <= args.VOUR && args.THREE >= args.FIVE;
     }
+  }
+  Version(args) {
+    return 'Version 1.0';
   }
 }
 Scratch.extensions.register(new StrictEqualityExtension());
