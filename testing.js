@@ -45,8 +45,8 @@ class StrictEqualityExtension {
           arguments: {}
         },
         {
-          opcode: 'Version',
-          blockType: Scratch.BlockType.BOOLEAN,
+          opcode: "Version 2.0",
+          blockType: Scratch.BlockType.REPORTER,
           text: 'Version',
           arguments: {}
         }
