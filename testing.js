@@ -61,11 +61,11 @@ class StrictEqualityExtension {
     // Note strict equality: Inputs must match exactly: in type, case, etc.
     if (args.VOUR < args.FIVE)
     {
-     return args.THREE > args.VOUR && args.THREE < args.FIVE;
+     return args.THREE >= args.VOUR && args.THREE <= args.FIVE;
     }
      else
     {
-     return args.THREE < args.VOUR && args.THREE > args.FIVE;
+     return args.THREE <= args.VOUR && args.THREE >= args.FIVE;
     }
   }
 }
