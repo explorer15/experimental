@@ -25,15 +25,15 @@ class StrictEqualityExtension {
           text: 'ist [THREE] zwischen [VOUR] und [FIVE]',
           arguments: {
             THREE: {
-              type: Scratch.ArgumentType.STRING,
+              type: Scratch.ArgumentType.NUMBER,
               defaultValue: '50'
             },
             VOUR: {
-              type: Scratch.ArgumentType.STRING,
+              type: Scratch.ArgumentType.NUMBER,
               defaultValue: '0'
             },
             FIVE: {
-              type: Scratch.ArgumentType.STRING,
+              type: Scratch.ArgumentType.NUMBER,
               defaultValue: '100'
             }
           }
@@ -59,7 +59,6 @@ class StrictEqualityExtension {
   }
   hi(args) {
     // Note strict equality: Inputs must match exactly: in type, case, etc.
-    Scratch.Variable.meineVariable = 1;
     return 'what do you want?';
   }
    innerhalb(args) {
